@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<head> 
+    <meta charset="utf-8" />
+    <meta name ="viewport" content = "width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+</head>
+
+<body>
+    <div>
+        <h1>Homepage</h1>
+     </div>
+     <div id = container1>
+     <div id="location">
+         <h1>Enter your location</h1>
+             <input type="text" name="location" />
+             <button onclick="document.location='./Order#'">Confirm</button>
+             
+      </div>      
+    </div>
+</body>
+
