@@ -1,20 +1,20 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 /*Designing the footer*/
@@ -128,31 +128,31 @@ ul li {
     border-radius: 20px;
 }
 
-ul li a {
-    padding: 1px;
-    color: darkblue;
-    text-decoration: none;
-    border-radius: 10px;
-}
+    ul li a {
+        padding: 1px;
+        color: darkblue;
+        text-decoration: none;
+        border-radius: 10px;
+    }
 
-ul li a:hover {
-    background-color: darkgrey;
-    border-radius: 10px;
-}
+        ul li a:hover {
+            background-color: darkgrey;
+            border-radius: 10px;
+        }
 
 
 /* website background image designing */
 #container3 {
-position: relative;
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 60vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
     height: 63vh;
 }
 
-/*Setting the background image using before pseudo selector*/
- #container3::before {
+    /*Setting the background image using before pseudo selector*/
+    #container3::before {
         content: '';
         /*background: url("./1.jpg") no-repeat center center/cover;*/
         width: 60vw;
@@ -229,8 +229,8 @@ footer {
     #row2 {
         width: 45vw;
     }
-    
 }
+
 .fakeimg {
     width: 100%;
     padding: 20px;
@@ -239,6 +239,7 @@ footer {
     position: relative;
     display: inline-block;
 }
+
 .img-tip {
     position: absolute;
     bottom: 0;
@@ -246,19 +247,114 @@ footer {
     color: red;
     opacity: 0.6;
     display: none;
-    
 }
+
 .fakeimg:hover .img-tip {
     display: block;
     width: 100%;
     text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 800px 300px;
+    height: 100%;
+    
+}
+/*Menu design */
+#menu {
+    background: whitesmoke;
+}
+.brand-logo{
+    padding: 0 30px;
+}
+.brand-logo img{
+    width: 150px;
+    height: 150px;
+    margin-top: -20px;
+}
+.menu-item a{
+    display:block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    margin: 12px;
+    color: rgb(128,129,129);
+    font-weight: 300; 
+}
+.menu-item a:hover{
+    background: rgb(250,212,218);
+}
+
+#food-container {
+    background: whitesmoke;
+    overflow: scroll;
+    overflow-x:hidden;
+    box-sizing:content-box;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+    z-index: 1;   
+}
+::-webkit-scrollbar{
+    display:none;
+}
+#header .address{
+    font-size: 20px;
+}
+.your-address{
+    border: 1px solid indianred;
+    color: indianred;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer; 
+}
+
+.add-box i {
+    font-size: 20px;
+}
+.util i,.user i{
+    font-size: 18px;
+    margin:0 16px;
+    border: 1px solid crimson;
+    padding: 8px 16px;
+    color: crimson;
+    border-radius:20px;
+    cursor: pointer;
+}
+.util i:active{
+    color: white;
+    background: crimson;
+}
+.food-item{
+
+    
+}
+#nica,#pelicana{
+   margin-top: 40px; 
+} 
+#category-name,.item-menu{
+    margin:10px;
+    font-size: 35px;
+    color: coral;
+}
+#item-card{
     
 }
 
-
-
-
-
-
+#cart {
+    background: lavender;
+}
 
 

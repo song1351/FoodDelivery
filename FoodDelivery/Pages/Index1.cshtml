@@ -1,0 +1,83 @@
+﻿@page
+@model FoodDelivery.Pages.Index1Model
+@{
+    ViewData["Title"] = "Home page";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food website</title>
+
+    <!--css file link-->
+    <link rel="stylesheet" href="~/css/site.css" />
+    
+    <!--Font link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- desktop view -->
+    <div id="container"
+         class="container">
+         <div id="menu">
+            <div class="brand-logo">
+                <img src="/image/foodielogo.png" alt="logo" />
+            </div > 
+            <div class="menu-item">
+                <a href="/">About</a>
+                <a href="/">Services</a>                
+                <a href="/">Your Order</a>
+                <a href="/">Wishlist</a>
+                <a href="/">Address</a>
+                <a href="/">Help</a>
+            </div>
+        </div>
+        <div id="food-container">
+        <div id="header">
+            <div class="add-box">
+            <i class="fa fa-map-marker your-address" id="add-address">Your Address</i>
+        </div> 
+        <div class="util">
+            <i class="fa fa-search">Search</i>
+            <i class="fa fa-tags">Offer</i>
+            <i class="fa fa-cart-plus" id="cart-plus"> 0 Items</i>
+        </div>
+        </div>
+        <div id="food-items">
+            <div id="nica">
+            <p id="category-name">Nica Plus</p>
+            <div id="item-card" >
+                <div id="card-top">
+                    <i class="fa fa-star" id=rating>$.3</i>
+                    <i class="fa fa-heart-o add-to-cart"></i> "
+                </div>
+                <img src="https://images.deliveryhero.io/image/fd-my/LH/t9li-hero.jpg" alt=""  />
+                <p id="item-name">Chicken Curry</p>
+                <p id="item-price">$10.00</p>
+            </div>
+        </div>
+        
+         <div id="pelicana">
+            <p id="category-name">Pelicana</p>
+            <div id="item-card" >
+                <div id="card-top">
+                    <i class="fa fa-star" id=rating>$.3</i>
+                    <i class="fa fa-heart-o add-to-cart"></i> "
+                </div>
+                <img src="https://images.deliveryhero.io/image/fd-my/LH/t9li-hero.jpg" alt=""  />
+                <p id="item-name">Chicken Curry</p>
+                <p id="item-price">$10.00</p>
+            </div>
+        </div>
+     </div>
+        </div>
+        <div id="cart">
+        <h1>Cart Box</h1>
+        </div>
+  </div> 
+</body>
+</html>
+    
+    
