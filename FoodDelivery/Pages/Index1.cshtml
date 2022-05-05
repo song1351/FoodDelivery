@@ -19,64 +19,58 @@
 </head>
 <body>
     <!-- desktop view -->
-    <div id="container"
-         class="container">
+    <div id="container" class="container">
          <div id="menu">
             <div class="brand-logo">
-                <img src="/image/foodielogo.png" alt="logo" />
+                <img src="https://image.shutterstock.com/image-vector/food-icon-design-template-260nw-1042503748.jpg" alt="logo" />
             </div > 
-            <div class="menu-item">
-                <a href="/">About</a>
-                <a href="/">Services</a>                
-                <a href="/">Your Order</a>
-                <a href="/">Wishlist</a>
-                <a href="/">Address</a>
-                <a href="/">Help</a>
-            </div>
+            
         </div>
+        
         <div id="food-container">
         <div id="header">
             <div class="add-box">
             <i class="fa fa-map-marker your-address" id="add-address">Your Address</i>
-        </div> 
+            </div> 
         <div class="util">
             <i class="fa fa-search">Search</i>
             <i class="fa fa-tags">Offer</i>
             <i class="fa fa-cart-plus" id="cart-plus"> 0 Items</i>
         </div>
         </div>
-        <div id="food-items">
+        <div id="food-items" class="food-items">
             <div id="nica">
             <p id="category-name">Nica Plus</p>
             <div id="item-card" >
                 <div id="card-top">
-                    <i class="fa fa-star" id=rating>$.3</i>
+                    <i class="fa fa-star" id=rating>5.3</i>
                     <i class="fa fa-heart-o add-to-cart"></i>
                 </div>
                 <img src="https://images.deliveryhero.io/image/fd-my/LH/t9li-hero.jpg" alt=""  />
                 <p id="item-name">Chicken Curry</p>
                 <p id="item-price">$10.00</p>
             </div>
-        </div>
+            
+            </div>
         
-         <div id="pelicana">
-            <p id="category-name">Pelicana</p>
-            <div id="item-card" >
+            <div id="pelicana">
+                <p id="category-name">Pelicana</p>
+                <div id="item-card" >
                 <div id="card-top">
-                    <i class="fa fa-star" id=rating>$.3</i>
+                    <i class="fa fa-star" id=rating>5.3</i>
                     <i class="fa fa-heart-o add-to-cart"></i>
                 </div>
                 <img src="https://www.placesandfoods.com/wp-content/uploads/2021/10/pelicana-kinrara-fried-chicken.jpg" alt=""  />
                 <p id="item-name">Chicken Curry</p>
                 <p id="item-price">$10.00</p>
+                </div>
             </div>
-        </div>
         
          <div id="h-coffee">
             <p id="category-name">H-Coffee</p>
             <div id="item-card" >
                 <div id="card-top">
-                    <i class="fa fa-star" id=rating>$.3</i>
+                    <i class="fa fa-star" id=rating>5.3</i>
                     <i class="fa fa-heart-o add-to-cart"></i>
                 </div>
                 <img src="https://images.deliveryhero.io/image/fd-my/LH/p1nx-hero.jpg" alt=""  />
@@ -84,12 +78,47 @@
                 <p id="item-price">$10.00</p>
             </div>
         </div>        
+   </div>
+     
+           <div id="cart">
+        <div id="cart-page" class="cart-toggle">
+         <p id="card-title">Cart Items</p>
+         <p id="m-total-amount">Total Amount: $100.00</p>
+         <table>
+            <thead>
+                <td>Item</td>
+                <td>Name</td>
+                <td>Quantity</td>
+                <td>Price</td>
+            </thead> 
+            <tbody id="table-body">
+                <tr>
+                    <td>
+                                <img src="https://images.deliveryhero.io/image/fd-my/LH/p1nx-hero.jpg" alt="img" width=100 >
+                    </td>
+                    <td>Chicken Pyaza</td>
+                    <td>
+                        <button class="decrease-item">-</button>
+                        <span>1</span>
+                        <button class="increase-item">+</button>
+                    </td>
+                    <td>$10.00</td>
+                </tr>
+            </tbody>
+         </table>
      </div>
+          
+        </div>
         </div>
         <div id="cart">
-        <h1>Cart Box</h1>
+         <div id="checkout" class="cart-toggle">
+               <p id="total-item">Total Item: 5</p>
+               <p id="total-price">Total Price: $50</p>
+               <p id="delivery">Free Delivery on above RM 50.00</p>
+               <button class="cart-btn">Checkout</button>
+           </div>
         </div>
-  </div> 
+ </div> 
 </body>
 </html>
     

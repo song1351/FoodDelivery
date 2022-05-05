@@ -29,8 +29,10 @@ footer {
 }
 
 #container1 { /*Homepage*/
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
+ 
+    
 }
 
 #location {
@@ -38,7 +40,14 @@ footer {
     font-weight: bold;
     font-size: 2rem;
     text-align: center;
-    margin-top: 35px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: 500px;
+    margin-top:200px;
+    width: 1000px;
+    
+    transform:translate(-50%,-50%);
 }
 
 #top { /* Index 2 head*/
@@ -230,7 +239,7 @@ footer {
         width: 45vw;
     }
 }
-
+/*Old Menu*/
 .fakeimg {
     width: 100%;
     padding: 20px;
@@ -261,7 +270,7 @@ footer {
     height: 100%;
     
 }
-/*Menu design */
+/*New Menu design */
 #menu {
     background: whitesmoke;
 }
@@ -333,12 +342,13 @@ footer {
     border-radius:20px;
     cursor: pointer;
 }
-.util i:active{
+.util i:active, user i:active{
     color: white;
     background: crimson;
 }
-.food-item{
-
+.food-items{
+    
+    
     
 }
 #nica,#pelicana{
@@ -350,7 +360,7 @@ footer {
     color: coral;
 }
 #item-card{
-    width:180px;
+    width:300px;
     height: 250px;
     padding: 10px;
     margin: 10px;
@@ -405,9 +415,99 @@ footer {
     color: rgb(2,27,27);
     font-size: 18px;
 }
+/*cart*/
+#cart {
+    background: whitesmoke;
+    border: 20px;
+}
+.cart-toggle{
+    display:none
+}
+#cart-page {
+    background: white;
+    margin: 40px 10px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    position: relative
+}
+#cart-title{
+    font-size:35px;
+    margin:0;
+    color:indianred;
+}
+#cart-page table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+#cart-page table thead td{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+#m-total-amount{
+    display:none;
+}
+#cart-page table tbody td {
+    font-size: 20px;
+    padding: 10px 0;
+}
+#cart-page table tbody button{
+    outline:none;
+    border:none;
+    font-size: 16px;
+    background: none;
+    background: lightcoral;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin:0 5px;
+    padding:3px 8px;
+}
+#cart-page table tbody img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
 
- #cart {
- background: lavender;
- }
+switch{
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 5px;
+    background:white;
+    padding:10px 20px;
+}
 
+#checkout p{
+    margin:15px 0;
+    float: left;
+
+}
+
+#total-price, #total-item{
+    font-size: 25px;
+    color: indianred;
+}
+.cart-btn{
+    outline: none;
+    border: none;
+    background: crimson;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    bottom: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.cart-btn:active{
+    color:crimson;
+    background: none;
+    border: 1px solid;  
+}
+#delivery{
+    font-size:20px;
+    color:limegreen;
+}
 
