@@ -239,38 +239,15 @@ footer {
         width: 45vw;
     }
 }
-/*Old Menu*/
-.fakeimg {
-    width: 100%;
-    padding: 20px;
-    float: right;
-    clear: both;
-    position: relative;
-    display: inline-block;
-}
 
-.img-tip {
-    position: absolute;
-    bottom: 0;
-    background: #333;
-    color: red;
-    opacity: 0.6;
-    display: none;
-}
-
-.fakeimg:hover .img-tip {
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-
+/*New Menu design */
 .container {
     display: grid;
     grid-template-columns: 250px 800px 300px;
     height: 100%;
     
 }
-/*New Menu design */
+
 #menu {
     background: whitesmoke;
 }
